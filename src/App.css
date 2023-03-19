@@ -1,0 +1,299 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.areaCardDiv {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hrLine {
+	width: 50%;
+	text-align: center;
+	margin-left: 0;
+	height: 3px;
+	color: #084999;
+	background-color: #084999;
+	border-width: 0;
+	display: block;
+}
+
+.blueBgDivHomePage {
+	background-image: url(../src/assets/img/bg-sc.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 80%;
+	border: none;
+}
+
+.grayBgDivHomePage {
+	background-color: #e5e7eb;
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	border: none;
+}
+.redBgDivHomePage {
+	background-color: #e4372a;
+	background-repeat: no-repeat;
+	width: 14em;
+	height: 60em;
+	border: none;
+	position: absolute;
+	border-radius: 0px 20px 20px 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.cardTutorial {
+	width: 750rem;
+	height: 19rem;
+	border: none;
+	margin: 25px 0 25px 0;
+	border-radius: 20px;
+	z-index: 999;
+}
+
+.cardBodyTutorial {
+	background-image: url(../src/assets/img/bg-sc.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	border: 3px solid #084999;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	box-shadow: 8px 8px 16px -2px rgba(0, 0, 0, 0.34);
+	color: white;
+}
+
+.cardInfo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	background-color: #ffff 35%;
+	border: 3px solid #c1d340;
+	border-radius: 20px;
+	box-shadow: 8px 8px 16px -2px rgba(0, 0, 0, 0.34);
+	width: 35rem;
+	margin: 15px;
+}
+.oddInfoCard {
+	background-color: #ffff 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	border: 3px solid #e4372a;
+	border-radius: 20px;
+	box-shadow: 8px 8px 16px -2px rgba(0, 0, 0, 0.34);
+	width: 35rem;
+	margin: 10px;
+}
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 33.3em;
+	background-color: #ffffff;
+	opacity: 1;
+	background-size: 4px 4px;
+}
+
+.navStyle {
+	padding-left: 380px;
+}
+.navLink {
+	margin-left: 50px;
+	text-align: center;
+}
+.navLink-p {
+	color: white;
+}
+
+.CardArea {
+	width: 40rem;
+	height: 20rem;
+	border: 5px;
+	margin: 25px 0 25px 0;
+	border-radius: 20px;
+}
+.CardBodyArea {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: 4px solid #084999;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	box-shadow: 8px 8px 16px -2px rgba(0, 0, 0, 0.34);
+}
+.CardButton {
+	width: 27rem;
+	height: 3rem;
+	/* background-image: url(../src/assets/img/bg-upce.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; */
+	background-color: #c1d340;
+	border: none;
+	border-radius: 20px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+}
+.addGroup {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.VRCard {
+	margin: 0 0 30px 0;
+	border-radius: 20px;
+	height: 650px !important;
+	width: 1500px;
+}
+.carousel-vr {
+	width: 1500px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+	height: 10%;
+	width: 5%;
+	margin-top: 290px;
+	margin-left: 80px;
+	margin-right: 80px;
+	border-radius: 50px;
+}
+.carousel-indicators {
+	display: none;
+}
+
+@media screen and (max-height: 992px) {
+	.VRCard {
+		margin: 0 0 30px 0;
+		border-radius: 20px;
+		height: 650px !important;
+		width: 1200px;
+	}
+	.areaCardDiv {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.CardArea {
+		width: 40rem;
+		height: 20rem;
+		border: 5px;
+		margin: 25px 0 25px 0;
+		border-radius: 20px;
+	}
+
+	.redBgDivHomePage {
+		background-color: #e4372a;
+		background-repeat: no-repeat;
+		width: 10em;
+		height: 60em;
+		border: none;
+		position: absolute;
+		border-radius: 0px 20px 20px 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.cardTutorial {
+		width: 50rem;
+		height: 19rem;
+		border: none;
+		margin: 25px 0 25px 0;
+		border-radius: 20px;
+		z-index: 999;
+	}
+	.navLink {
+		color: white;
+		padding-left: 35px;
+		text-align: center;
+	}
+	.navStyle {
+		padding-left: 0px;
+	}
+
+	.cardInfo {
+		width: 30rem;
+	}
+	.oddInfoCard {
+		width: 30rem;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
