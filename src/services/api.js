@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = 'https://fair-cyan-piglet-yoke.cyclic.app';
+const BASE_URL = 'http://localhost:9000';
 
 const getAllGedung = () => {
 	return axios.get(`${BASE_URL}/gedung/list`);

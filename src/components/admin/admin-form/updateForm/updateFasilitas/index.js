@@ -12,6 +12,7 @@ const UpdateFasilitasForm = () => {
 	const [penjelasan, setPenjelasan] = useState('');
 	const [image, setImage] = useState('');
 	const [idGedung, setIdGedung] = useState('');
+	const [linkTour, setLinkTour] = useState('');
 	const navigate = useNavigate();
 	const [validated, setValidated] = useState(false);
 
@@ -34,12 +35,13 @@ const UpdateFasilitasForm = () => {
 		});
 	};
 
-	const Submit = (namaFasilitas, penjelasan, image, idGedung) => {
+	const Submit = (namaFasilitas, penjelasan, image, idGedung, linkTour) => {
 		const bodyJSON = {
 			idGedung: idGedung,
 			namaFasilitas: namaFasilitas,
 			penjelasan: penjelasan,
-			image: image,
+			gambar: image,
+			linkTour
 		};
 		return updateFasilitas(params.id, bodyJSON);
 	};
@@ -52,7 +54,7 @@ const UpdateFasilitasForm = () => {
 		} else {
 			setValidated(true);
 			event.preventDefault();
-			await Submit(namaFasilitas, penjelasan, image, idGedung)
+			await Submit(namaFasilitas, penjelasan, image, idGedung, linkTour)
 				.then(() => {
 					modalSuccess();
 					setTimeout(() => navigate('/UPerVR/admin/dashboard'), 1300);
@@ -69,7 +71,8 @@ const UpdateFasilitasForm = () => {
 		fetchApi();
 		setNamaFasilitas(data.namaFasilitas);
 		setPenjelasan(data.penjelasan);
-		setImage(data.image);
+		setImage(data.gambar);
+		setLinkTour(data.linkTour);
 		setIdGedung(data.idGedung);
 	}, [data.idFasilitas]);
 
@@ -111,6 +114,21 @@ const UpdateFasilitasForm = () => {
 
 				<Form.Group className="mb-3" controlId="validationPenjelasanGedung">
 					<Form.Label style={{ float: 'left' }}>
+						Link VR Fasilitas:
+					</Form.Label>
+					<Form.Control
+						placeholder="Link VR Fasilitas"
+						value={linkTour}
+						onChange={(e) => setLinkTour(e.target.value)}
+						required
+					/>
+					<Form.Control.Feedback type="invalid">
+						Penjelasan Fasilitas Kosong!
+					</Form.Control.Feedback>
+				</Form.Group>
+
+				<Form.Group className="mb-3" controlId="validationPenjelasanGedung">
+					<Form.Label style={{ float: 'left' }}>
 						ID Gedung Fasilitas :
 					</Form.Label>
 					<Form.Control
@@ -141,7 +159,7 @@ const UpdateFasilitasForm = () => {
 					style={{ justifyContent: 'space-evenly', paddingTop: '25px' }}
 				>
 					<Button variant="primary" type="submit">
-						ADD
+						Update
 					</Button>{' '}
 					<Button variant="danger" as={Link} to={`/UPerVR/admin/dashboard`}>
 						Cancel
