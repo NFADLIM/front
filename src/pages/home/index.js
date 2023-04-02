@@ -23,7 +23,7 @@ const HomePage = () => {
 					/>
 				</Container>
 			</div>
-			{/* <div className="redBgDivHomePage">
+			{ <div className="redBgDivHomePage">
 				<h2
 					style={{
 						color: 'white',
@@ -35,7 +35,7 @@ const HomePage = () => {
 				>
 					GEDUNG UNIVERSITAS PERTAMINA
 				</h2>
-			</div> */}
+			</div> }
 			<Container
 				fluid="sm"
 				className="container"
@@ -44,7 +44,7 @@ const HomePage = () => {
 				<TutorialCard />
 			</Container>
 
-			{/* <div className="grayBgDivHomePage">
+			{ <div className="grayBgDivHomePage">
 				<Container fluid="sm" className="container">
 					<div className="areaCardDiv">
 						{area.map((item) => (
@@ -57,7 +57,7 @@ const HomePage = () => {
 						))}
 					</div>
 				</Container>
-			</div> */}
+			</div> }
 
 			<Container fluid="sm" className="container">
 				<hr className="hrLine" />

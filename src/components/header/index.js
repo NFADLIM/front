@@ -36,7 +36,7 @@ const Header = () => {
 							<p className="navLink-p">Home</p>
 						</Nav.Link>
 
-						{/* <NavDropdown
+						{ <NavDropdown
 							title="Area"
 							id="collasible-nav-dropdown"
 							className="navLink"
@@ -53,7 +53,7 @@ const Header = () => {
 									<p>{item.namaGedung}</p>
 								</NavDropdown.Item>
 							))}
-						</NavDropdown> */}
+						</NavDropdown> }
 
 						<Nav.Link
 							href="https://universitaspertamina.ac.id/"
