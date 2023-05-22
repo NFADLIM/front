@@ -59,7 +59,7 @@ const DashboardFasilitas = () => {
 							<td>{item.idFasilitas}</td>
 							<td>{item.namaFasilitas}</td>
 							<td style={{ maxWidth: '40rem' }}>
-								<img src={item.image} style={{ maxWidth: '15rem' }} />
+								<img src={item.gambar} style={{ maxWidth: '15rem' }} />
 							</td>
 							<td>{item.idGedung}</td>
 

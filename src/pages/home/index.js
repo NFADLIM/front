@@ -50,7 +50,7 @@ const HomePage = () => {
 						{area.map((item) => (
 							<AreaCard
 								key={item.idGedung}
-								bg={item.image}
+								bg={item.gambar}
 								name={item.namaGedung}
 								id={item.idGedung}
 							/>

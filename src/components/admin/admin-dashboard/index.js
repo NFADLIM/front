@@ -81,7 +81,7 @@ const Dashboard = () => {
 								<td>{item.idGedung}</td>
 								<td>{item.namaGedung}</td>
 								<td style={{ maxWidth: '40rem' }}>
-									<img src={item.image} style={{ maxWidth: '15rem' }} />
+									<img src={item.gambar} style={{ maxWidth: '15rem' }} />
 								</td>
 								<td
 									style={{

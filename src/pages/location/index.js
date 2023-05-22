@@ -36,7 +36,7 @@ const AreaPage = () => {
 	};
 
 	useEffect(() => {
-		fetchApi(params.idGedung);
+		fetchApi(params.id);
 		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 	}, [params]);
 
@@ -54,7 +54,7 @@ const AreaPage = () => {
 				<Container fluid="sm" className="container">
 					<GedungCard
 						name={gedung.namaGedung}
-						img={gedung.image}
+						img={gedung.gambar}
 						exp={gedung.penjelasan}
 					/>
 					<VRTour style={{ zIndex: '1' }} link={gedung.linkTour} />
@@ -81,7 +81,7 @@ const AreaPage = () => {
 						<FasilitasCard
 							nama={item.namaFasilitas}
 							exp={item.penjelasan}
-							img={item.image}
+							img={item.gambar}
 							id={item.idFasilitas}
 							index={index}
 						/>
