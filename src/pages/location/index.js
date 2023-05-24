@@ -13,7 +13,6 @@ import { getAllFasilitas, getGedungById } from '../../services/api';
 const AreaPage = () => {
 	const [gedung, setGedung] = useState([]);
 	const [fasilitas, setFasilitas] = useState([]);
-	let hasil = [];
 	const params = useParams();
 
 	const fetchApi = async (id) => {
@@ -21,18 +20,9 @@ const AreaPage = () => {
 			setGedung(response.data);
 		});
 
-		getAllFasilitas().then((response) => {
-			// console.log(params.id);
-			// console.log(response.data.length);
-			for (let i = 0; i < response.data.length; i++) {
-				if (params.idGedung == response.data[i].idGedung) {
-					console.log(response.data[i].idGedung);
-					hasil.push(response.data[i]);
-				}
-			}
-			setFasilitas(hasil);
+		getAllFasilitas().then(({ data }) => {
+			setFasilitas(data.filter(f => f.idGedung == params.id));
 		});
-		console.log(gedung.data);
 	};
 
 	useEffect(() => {
