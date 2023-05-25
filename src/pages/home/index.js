@@ -63,7 +63,6 @@ const HomePage = () => {
 				<hr className="hrLine" />
 			</Container>
 
-			{/*nyari cara supaya mappingnya bisa masuk kedalam component card*/}
 		</>
 	);
 };

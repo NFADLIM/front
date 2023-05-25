@@ -4,6 +4,7 @@ import {
 	TutorialCard,
 	GedungCard,
 	FasilitasCard,
+	AreaCard,
 } from '../../components';
 import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
@@ -53,6 +54,20 @@ const AreaPage = () => {
 			<Container fluid="sm" className="container">
 				<TutorialCard />
 			</Container>
+			{ <div className="grayBgDivHomePage">
+				<Container fluid="sm" className="container">
+					<div className="areaCardDiv">
+						{area.map((item) => (
+							<AreaCard
+								key={item.idFasilitas}
+								bg={item.gambar}
+								name={item.namaFasilitas}
+								id={item.idFasilitas}
+							/>
+						))}
+					</div>
+				</Container>
+			</div> }
 			<div
 				style={{
 					display: 'flex',
