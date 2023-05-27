@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const InfoCard = (props) => {
 	return (
@@ -17,7 +18,16 @@ const InfoCard = (props) => {
 			<Card.Body>
 				<b style={{ color: '#0057B1', fontSize: '18px' }}>{props.nama}</b>
 				<br />
-				<p>{props.exp}</p>
+				<Button
+					variant="success"
+					className="CardButton w-100"
+					as={Link}
+					to={`/facilities/${props.id}`}
+					key={props.id}
+					params={props}
+				>
+					{props.exp}
+				</Button>
 			</Card.Body>
 		</Card>
 	);

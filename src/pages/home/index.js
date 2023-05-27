@@ -19,7 +19,7 @@ const HomePage = () => {
 					<ExplainCard />
 					<VRTour
 						style={{ zIndex: '1' }}
-						link="https://kuula.co/share/collection/7vj4f?logo=1&card=1&info=1&fs=1&vr=1&zoom=1&thumbs=3&margin=8&alpha=0.60&inst=0"
+						link="https://kuula.co/share/collection/7vB1h?logo=1&card=1&info=1&logosize=40&fs=1&vr=1&zoom=1&sd=1&initload=0&autorotate=0.3&autop=50&autopalt=1&thumbs=0&alpha=0.60"
 					/>
 				</Container>
 			</div>
@@ -63,6 +63,7 @@ const HomePage = () => {
 				<hr className="hrLine" />
 			</Container>
 
+			{/*nyari cara supaya mappingnya bisa masuk kedalam component card*/}
 		</>
 	);
 };

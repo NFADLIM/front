@@ -13,6 +13,7 @@ import {
 	UpdateGedung,
 } from './pages';
 import ProtectedRoute from './route/protected-route';
+import Fasilitas from './pages/fasilitas';
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/Area/:namaGedung/:id" element={<AreaPage />} />
+				<Route path="/facilities/:id" element={<Fasilitas />} />
 				<Route path="/UPerVR/admin/login" element={<Login />} />
 				<Route element={<ProtectedRoute />}>
 					<Route path="/UPerVR/admin/dashboard" element={<AdminPage />} />
