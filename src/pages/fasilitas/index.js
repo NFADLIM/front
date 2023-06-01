@@ -9,6 +9,7 @@ import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import bg from '../../assets/img/bg-sc.png';
 import { getAllFasilitas, getFasilitasById, getGedungById } from '../../services/api';
+import { isValidURL } from '../../helpers';
 
 export default function Fasilitas() {
 	const [fasilitas, setFasilitas] = useState([]);
@@ -42,7 +43,8 @@ export default function Fasilitas() {
 						img={fasilitas.gambar}
 						exp={fasilitas.penjelasan}
 					/>
-					<VRTour style={{ zIndex: '1' }} link={fasilitas.linkTour} />
+					{ isValidURL(fasilitas.linkTour) ? <VRTour style={{ zIndex: '1' }} link={fasilitas.linkTour} /> : '' }
+					
 				</Container>
 			</div>
 			<Container fluid="sm" className="container">

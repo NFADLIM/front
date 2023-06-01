@@ -16,27 +16,16 @@ const InfoOddCard = (props) => {
 			/>
 
 			<Card.Body>
-				<b
-					style={{
-						color: '#0057B1',
-						fontSize: '18px',
-					}}
+				<Button
+					variant="success"
+					className="CardButton w-100"
+					as={Link}
+					to={`/facilities/${props.id}`}
+					key={props.id}
+					params={props}
 				>
 					{props.nama}
-				</b>
-				<br />
-				<div>
-					<Button
-						variant="success"
-						className="CardButton w-100"
-						as={Link}
-						to={`/facilities/${props.id}`}
-						key={props.id}
-						params={props}
-					>
-						{props.exp}
-					</Button>
-				</div>
+				</Button>
 			</Card.Body>
 		</Card>
 	);

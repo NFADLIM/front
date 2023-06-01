@@ -31,11 +31,15 @@ const GedungCard = (props) => {
 						<h5>{props.exp}</h5>
 					</div>
 				</div>
-				<div>
+				<div className="w-100">
 					<img
 						src={props.img}
-						width="100%"
 						style={{
+							width: '100%',
+							height: '100%',
+							objectFit: 'cover',
+							objectPosition: 'center',
+							maxHeight: '400px',
 							border: '3px solid #0057B1',
 							borderRadius: '20px',
 							boxShadow: '10px 10px 15px -4px rgba(0,0,0,0.67)',

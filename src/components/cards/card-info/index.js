@@ -16,8 +16,6 @@ const InfoCard = (props) => {
 			/>
 
 			<Card.Body>
-				<b style={{ color: '#0057B1', fontSize: '18px' }}>{props.nama}</b>
-				<br />
 				<Button
 					variant="success"
 					className="CardButton w-100"
@@ -26,7 +24,7 @@ const InfoCard = (props) => {
 					key={props.id}
 					params={props}
 				>
-					{props.exp}
+					{props.nama}
 				</Button>
 			</Card.Body>
 		</Card>

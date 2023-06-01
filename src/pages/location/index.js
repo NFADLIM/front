@@ -9,6 +9,7 @@ import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import bg from '../../assets/img/bg-sc.png';
 import { getAllFasilitas, getGedungById } from '../../services/api';
+import { isValidURL } from '../../helpers';
 
 const AreaPage = () => {
 	const [gedung, setGedung] = useState([]);
@@ -47,7 +48,7 @@ const AreaPage = () => {
 						img={gedung.gambar}
 						exp={gedung.penjelasan}
 					/>
-					<VRTour style={{ zIndex: '1' }} link={gedung.linkTour} />
+					{ isValidURL(gedung.linkTour) ? <VRTour style={{ zIndex: '1' }} link={gedung.linkTour} /> : '' }
 				</Container>
 			</div>
 			<Container fluid="sm" className="container">
