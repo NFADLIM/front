@@ -18,8 +18,8 @@ const ExplainCard = () => {
 			<Card
 				style={{
 					width: '55rem',
-					border: '10px solid #E4372A',
-					borderRadius: '10px',
+					border: '22px solid #E4372A',
+					borderRadius: '20px',
 				}}
 			>
 				<Card.Body
@@ -31,7 +31,7 @@ const ExplainCard = () => {
 						Selamat datang di Virtual Tour Universitas Pertamina. Anda dapat menggunakan
 						mouse atau langsung menggunakan tangan untuk mengendalikan virtual tour. 
 						Penjelasan pengendalian lebih jelasnya, berada di bawah virtual tour. <br />
-						.
+						
 					</p>
 					<p></p>
 				</Card.Body>
