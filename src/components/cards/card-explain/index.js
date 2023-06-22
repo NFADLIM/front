@@ -19,7 +19,7 @@ const ExplainCard = () => {
 				style={{
 					width: '55rem',
 					border: '22px solid #E4372A',
-					borderRadius: '20px',
+					borderRadius: '25px',
 				}}
 			>
 				<Card.Body
