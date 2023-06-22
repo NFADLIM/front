@@ -17,7 +17,7 @@ const ExplainCard = () => {
 			</h1>
 			<Card
 				style={{
-					width: '100rem',
+					width: '55rem',
 					border: '10px solid #E4372A',
 					borderRadius: '20px',
 				}}
