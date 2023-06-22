@@ -17,14 +17,14 @@ const ExplainCard = () => {
 			</h1>
 			<Card
 				style={{
-					width: '55rem',
-					border: '3px solid #E4372A',
+					width: '100rem',
+					border: '10px solid #E4372A',
 					borderRadius: '20px',
 				}}
 			>
 				<Card.Body
 					style={{
-						textAlign: 'left',
+						textAlign: 'left', fontWeight: 'bold',
 					}}
 				>
 					<p>
