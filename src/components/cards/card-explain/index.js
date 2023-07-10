@@ -18,7 +18,7 @@ const ExplainCard = () => {
 			<Card
 				style={{
 					width: '55rem',
-					border: '22px solid #E4372A',
+					border: '22px',
 					borderRadius: '25px',
 				}}
 			>
